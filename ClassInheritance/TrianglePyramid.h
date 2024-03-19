@@ -6,9 +6,18 @@ class TrianglePyramid: public Shape3D
 private:
 	
 	std::string name;
+	float base;
+	float height;
+	float volume;
 
 public:
 
-	TrianglePyramid(std::string);
+	TrianglePyramid();
+	TrianglePyramid(float, float);
+
+	void show_info();
+	void change_scale(float);
+	std::string get_name();
+	void calculate_volume();
 };
 

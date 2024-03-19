@@ -1,86 +1,17 @@
-#include "Shape.h"
-
-
-Shape::Shape(std::string _name)
-{
-	name = _name;
-}
-
-float Shape::get_scale()
-{
-	return scale;
-}
+#include"Shape.h"
 
 std::string Shape::get_name()
 {
-	return name;
+	std::cout << "\n<Shape object class have none name>\n";
+	return "None";
 }
 
-float Shape::get_radius()
+void Shape::show_info()
 {
-	return radius;
+	std::cout << "\n<Shape object class have none params to show>\n";
 }
 
-float Shape::get_base()
+void Shape::change_scale(float scale_factor)
 {
-	return base;
+	std::cout << "\n<Shape object have none form to change scale>\n";
 }
-
-float Shape::get_height()
-{
-	return height;
-}
-
-float Shape::get_side()
-{
-	return side;
-}
-
-void Shape::show_info(float area_param, float height)
-{
-
-	if (name == "Circal")
-	{
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tRadius: " << radius << "\n";
-	}
-
-	else if (name == "Triangle")
-	{
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tBase: " << base << "\n";
-		std::cout << "\tHeight: " << height << "\n";
-	}
-
-	else if (name == "Square")
-	{
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tSides lenght: " << side << "\n";
-	}
-
-	else if (name == "Sphere")
-	{
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tRadius: " << radius << "\n";
-	}
-
-	else if (name == "TriangulerPiramid")
-	{
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tBase: " << base << "\n";
-		std::cout << "\tHeight: " << height << "\n";
-
-	}
-
-	else if (name == "Cylinder")
-	{
-
-		std::cout << "Object: " << name << "\n";
-		std::cout << "\tRaduis: " << radius << "\n";
-		std::cout << "\tHeight: " << height << "\n";
-	}
-
-}
-
-
-
